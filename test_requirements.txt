@@ -1,3 +1,6 @@
 ddt
 mock
 fs<2
+
+# pin selenium to fix issue
+selenium==3.6
