@@ -37,6 +37,7 @@ class ShowAnswerXBlockMixin(object):
     )
     solution = String(
         help=_("Solution to the problem to show to the user"),
+        display_name=_("Solution"),
         scope=Scope.settings,
         multiline_editor='html',
         resettable_editor=False,

@@ -57,6 +57,8 @@ class TestShowAnswerXBlock(SeleniumXBlockTest):
         """
         Assert field overrides in XML
         """
-        block = self.set_up_root_block('solution="The solution" showanswer="{}"'.format(ShowAnswer.ANSWERED))
+        block = self.set_up_root_block(
+            'solution="The solution" showanswer="{}"'.format(ShowAnswer.ANSWERED)
+        )
         self.assertEqual(block.solution, 'The solution')
         self.assertEqual(block.showanswer, ShowAnswer.ANSWERED)
