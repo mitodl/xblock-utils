@@ -40,6 +40,7 @@ class ShowAnswerXBlockMixin(object):
         scope=Scope.settings,
         multiline_editor='html',
         resettable_editor=False,
+        default='',
     )
 
     def answer_available(self):  # pylint: disable=too-many-return-statements

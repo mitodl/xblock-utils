@@ -49,7 +49,7 @@ class TestShowAnswerXBlock(SeleniumXBlockTest):
         Assert defaults
         """
         block = self.set_up_root_block()
-        self.assertIsNone(block.solution)
+        self.assertEqual(block.solution, '')
         self.assertEqual(block.showanswer, ShowAnswer.PAST_DUE)
 
     @XBlock.register_temp_plugin(ShowAnswerXBlock, "showanswer")
